@@ -15,21 +15,13 @@ using System.Windows.Shapes;
 namespace BMW_Dealership
 {
     /// <summary>
-    /// Interaction logic for Log_In.xaml
+    /// Interaction logic for Sign_Up.xaml
     /// </summary>
-    public partial class Log_In : Window
+    public partial class Sign_Up : Window
     {
-        public Log_In()
+        public Sign_Up()
         {
             InitializeComponent();
-        }
-
-
-        private void GoToSignUp_Click(object sender, RoutedEventArgs e)
-        {
-            Sign_Up obj = new Sign_Up();
-            obj.Show();
-            this.Close();
         }
     }
 }

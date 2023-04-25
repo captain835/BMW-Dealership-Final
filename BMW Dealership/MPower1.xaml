@@ -1,0 +1,302 @@
+﻿<Window x:Class="BMW_Dealership.MPower1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BMW_Dealership"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        Title="MPower1" Height="1080" Width="1920" Background="White">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="170"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Border Background="#EEEEEE" BorderBrush="Transparent"/>
+        <StackPanel
+            VerticalAlignment="Center"
+            HorizontalAlignment="Left"
+            Orientation="Horizontal"
+            Margin="30,0,0,0"
+            Grid.Row="0">
+            <Image Source="/Resources/BMW_Logo.png"
+               Height="120"
+               Width="120"
+               VerticalAlignment="Center"/>
+            <Image Source="/Resources/M-Logo.png"
+               Height="120"
+               Width="200"
+               VerticalAlignment="Center"/>
+        </StackPanel>
+        <TextBlock 
+            Grid.Row="0"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            FontSize="40"
+            Foreground="DimGray">
+            Sheer Driving <Run FontWeight="Bold">Pleasure</Run>
+        </TextBlock>
+        <StackPanel
+            Grid.Row="0"
+            HorizontalAlignment="Right"
+            VerticalAlignment="Center"
+            Margin="80,0"
+            Orientation="Horizontal">
+            <Button
+                BorderBrush="Transparent"
+                BorderThickness="0"
+                Height="70"
+                Width="150"
+                Background="Transparent"
+                Foreground="#3b3b3b"
+                FontSize="40">
+                <Button.Content>
+                    <TextBlock>
+                        <Underline>Profile</Underline>
+                    </TextBlock>
+                </Button.Content>
+            </Button>
+            <Button
+                BorderBrush="Transparent"
+                BorderThickness="0"
+                Height="70"
+                Width="200"
+                Background="Transparent"
+                Foreground="#3b3b3b"
+                FontSize="40">
+                <Button.Content>
+                    <TextBlock>
+                        <Underline>Watchlist</Underline>
+                    </TextBlock>
+                </Button.Content>
+            </Button>
+        </StackPanel>
+        
+        <!-- Mid Part -->
+
+        
+        
+        
+        <!--Storyboard-->
+        <Grid Width="900" Height="600" Grid.Row="1" HorizontalAlignment="Left" Margin="40,0">
+
+            <TextBlock
+                    Text="Hover to view in 360°"
+                    FontSize="20"
+                    FontWeight="Normal"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Bottom"
+                    Foreground="#3b3b3b"/>
+            <Image x:Name="img1" Source="/Resources/i4-View/i4_1.png" />
+            <Image x:Name="img2" Source="/Resources/i4-View/i4_2.png" Opacity="0" />
+            <Image x:Name="img3" Source="/Resources/i4-View/i4_3.png" Opacity="0" />
+            <Image x:Name="img4" Source="/Resources/i4-View/i4_4.png" Opacity="0" />
+            <Image x:Name="img5" Source="/Resources/i4-View/i4_5.png" Opacity="0" />
+            <Image x:Name="img6" Source="/Resources/i4-View/i4_6.png" Opacity="0" />
+            <Image x:Name="img7" Source="/Resources/i4-View/i4_7.png" Opacity="0" />
+            <Image x:Name="img8" Source="/Resources/i4-View/i4_8.png" Opacity="0" />
+            <Image x:Name="img9" Source="/Resources/i4-View/i4_9.png" Opacity="0" />
+            <Image x:Name="img10" Source="/Resources/i4-View/i4_10.png" Opacity="0" />
+            <Image x:Name="img11" Source="/Resources/i4-View/i4_11.png" Opacity="0" />
+            <Image x:Name="img12" Source="/Resources/i4-View/i4_12.png" Opacity="0" />
+            <Image x:Name="img13" Source="/Resources/i4-View/i4_13.png" Opacity="0" />
+            <Image x:Name="img14" Source="/Resources/i4-View/i4_14.png" Opacity="0" />
+            <Image x:Name="img15" Source="/Resources/i4-View/i4_15.png" Opacity="0" />
+            <Image x:Name="img16" Source="/Resources/i4-View/i4_16.png" Opacity="0" />
+            <Image x:Name="img17" Source="/Resources/i4-View/i4_17.png" Opacity="0" />
+            <Image x:Name="img18" Source="/Resources/i4-View/i4_18.png" Opacity="0" />
+            <Image x:Name="img19" Source="/Resources/i4-View/i4_19.png" Opacity="0" />
+            <Image x:Name="img20" Source="/Resources/i4-View/i4_20.png" Opacity="0" />
+            <Image x:Name="img21" Source="/Resources/i4-View/i4_21.png" Opacity="0" />
+            <Image x:Name="img22" Source="/Resources/i4-View/i4_22.png" Opacity="0" />
+            <Image x:Name="img23" Source="/Resources/i4-View/i4_23.png" Opacity="0" />
+            <Image x:Name="img24" Source="/Resources/i4-View/i4_24.png" Opacity="0" />
+            <Image x:Name="img25" Source="/Resources/i4-View/i4_25.png" Opacity="0" />
+            <Image x:Name="img26" Source="/Resources/i4-View/i4_26.png" Opacity="0" />
+            <Image x:Name="img27" Source="/Resources/i4-View/i4_27.png" Opacity="0" />
+            <Image x:Name="img28" Source="/Resources/i4-View/i4_28.png" Opacity="0" />
+            <Image x:Name="img29" Source="/Resources/i4-View/i4_29.png" Opacity="0" />
+            <Image x:Name="img30" Source="/Resources/i4-View/i4_30.png" Opacity="0" />
+            <Image x:Name="img31" Source="/Resources/i4-View/i4_31.png" Opacity="0" />
+            <Image x:Name="img32" Source="/Resources/i4-View/i4_32.png" Opacity="0" />
+            <Image x:Name="img33" Source="/Resources/i4-View/i4_33.png" Opacity="0" />
+            <Image x:Name="img34" Source="/Resources/i4-View/i4_34.png" Opacity="0" />
+            <Image x:Name="img35" Source="/Resources/i4-View/i4_35.png" Opacity="0" />
+
+            <Grid.Triggers>
+                <EventTrigger RoutedEvent="FrameworkElement.Loaded">
+                    <BeginStoryboard x:Name="MyStoryboard">
+                        <Storyboard RepeatBehavior="Forever"  AutoReverse="False">
+                            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="img1" Storyboard.TargetProperty="Opacity">
+                                <DiscreteDoubleKeyFrame  KeyTime="0:0:0" Value="1"/>
+                                <SplineDoubleKeyFrame  KeyTime="0:0:1" Value="0"/>
+                            </DoubleAnimationUsingKeyFrames>
+                            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="img2" Storyboard.TargetProperty="Opacity">
+                                <DiscreteDoubleKeyFrame  KeyTime="0:0:1" Value="1"/>
+                                <SplineDoubleKeyFrame  KeyTime="0:0:2" Value="0"/>
+                            </DoubleAnimationUsingKeyFrames>
+                            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="img3" Storyboard.TargetProperty="Opacity">
+                                <DiscreteDoubleKeyFrame  KeyTime="0:0:2" Value="1"/>
+                                <SplineDoubleKeyFrame  KeyTime="0:0:3" Value="0"/>
+                            </DoubleAnimationUsingKeyFrames>
+                            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="img4" Storyboard.TargetProperty="Opacity">
+                                <DiscreteDoubleKeyFrame  KeyTime="0:0:3" Value="1"/>
+                                <SplineDoubleKeyFrame  KeyTime="0:0:4" Value="0"/>
+                            </DoubleAnimationUsingKeyFrames>
+                            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="img5" Storyboard.TargetProperty="Opacity">
+                                <DiscreteDoubleKeyFrame  KeyTime="0:0:4" Value="1"/>
+                                <SplineDoubleKeyFrame  KeyTime="0:0:5" Value="0"/>
+                            </DoubleAnimationUsingKeyFrames>
+                            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="img6" Storyboard.TargetProperty="Opacity">
+                                <DiscreteDoubleKeyFrame  KeyTime="0:0:5" Value="1"/>
+                                <SplineDoubleKeyFrame  KeyTime="0:0:6" Value="0"/>
+                            </DoubleAnimationUsingKeyFrames>
+                            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="img7" Storyboard.TargetProperty="Opacity">
+                                <DiscreteDoubleKeyFrame  KeyTime="0:0:6" Value="1"/>
+                                <DiscreteDoubleKeyFrame  KeyTime="0:0:7" Value="0"/>
+                            </DoubleAnimationUsingKeyFrames>
+                            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="img8" Storyboard.TargetProperty="Opacity">
+                                <DiscreteDoubleKeyFrame  KeyTime="0:0:7" Value="1"/>
+                                <DiscreteDoubleKeyFrame  KeyTime="0:0:8" Value="0"/>
+                            </DoubleAnimationUsingKeyFrames>
+                            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="img9" Storyboard.TargetProperty="Opacity">
+                                <DiscreteDoubleKeyFrame  KeyTime="0:0:8" Value="1"/>
+                                <DiscreteDoubleKeyFrame  KeyTime="0:0:9" Value="0"/>
+                            </DoubleAnimationUsingKeyFrames>
+                            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="img10" Storyboard.TargetProperty="Opacity">
+                                <DiscreteDoubleKeyFrame  KeyTime="0:0:9" Value="1"/>
+                                <DiscreteDoubleKeyFrame  KeyTime="0:0:10" Value="0"/>
+                            </DoubleAnimationUsingKeyFrames>
+                            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="img11" Storyboard.TargetProperty="Opacity">
+                                <DiscreteDoubleKeyFrame  KeyTime="0:0:10" Value="1"/>
+                                <DiscreteDoubleKeyFrame  KeyTime="0:0:11" Value="0"/>
+                            </DoubleAnimationUsingKeyFrames>
+                            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="img12" Storyboard.TargetProperty="Opacity">
+                                <DiscreteDoubleKeyFrame  KeyTime="0:0:11" Value="1"/>
+                                <DiscreteDoubleKeyFrame  KeyTime="0:0:12" Value="0"/>
+                            </DoubleAnimationUsingKeyFrames>
+                            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="img13" Storyboard.TargetProperty="Opacity">
+                                <DiscreteDoubleKeyFrame  KeyTime="0:0:12" Value="1"/>
+                                <DiscreteDoubleKeyFrame  KeyTime="0:0:13" Value="0"/>
+                            </DoubleAnimationUsingKeyFrames>
+                            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="img14" Storyboard.TargetProperty="Opacity">
+                                <DiscreteDoubleKeyFrame  KeyTime="0:0:13" Value="1"/>
+                                <DiscreteDoubleKeyFrame  KeyTime="0:0:14" Value="0"/>
+                            </DoubleAnimationUsingKeyFrames>
+                            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="img15" Storyboard.TargetProperty="Opacity">
+                                <DiscreteDoubleKeyFrame  KeyTime="0:0:14" Value="1"/>
+                                <DiscreteDoubleKeyFrame  KeyTime="0:0:15" Value="0"/>
+                            </DoubleAnimationUsingKeyFrames>
+                            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="img16" Storyboard.TargetProperty="Opacity">
+                                <DiscreteDoubleKeyFrame  KeyTime="0:0:15" Value="1"/>
+                                <DiscreteDoubleKeyFrame  KeyTime="0:0:16" Value="0"/>
+                            </DoubleAnimationUsingKeyFrames>
+                            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="img17" Storyboard.TargetProperty="Opacity">
+                                <DiscreteDoubleKeyFrame  KeyTime="0:0:16" Value="1"/>
+                                <DiscreteDoubleKeyFrame  KeyTime="0:0:17" Value="0"/>
+                            </DoubleAnimationUsingKeyFrames>
+                            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="img18" Storyboard.TargetProperty="Opacity">
+                                <DiscreteDoubleKeyFrame  KeyTime="0:0:17" Value="1"/>
+                                <DiscreteDoubleKeyFrame  KeyTime="0:0:18" Value="0"/>
+                            </DoubleAnimationUsingKeyFrames>
+                            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="img19" Storyboard.TargetProperty="Opacity">
+                                <DiscreteDoubleKeyFrame  KeyTime="0:0:18" Value="1"/>
+                                <DiscreteDoubleKeyFrame  KeyTime="0:0:19" Value="0"/>
+                            </DoubleAnimationUsingKeyFrames>
+                            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="img20" Storyboard.TargetProperty="Opacity">
+                                <DiscreteDoubleKeyFrame  KeyTime="0:0:19" Value="1"/>
+                                <DiscreteDoubleKeyFrame  KeyTime="0:0:20" Value="0"/>
+                            </DoubleAnimationUsingKeyFrames>
+                            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="img21" Storyboard.TargetProperty="Opacity">
+                                <DiscreteDoubleKeyFrame KeyTime="0:0:20" Value="1"/>
+                                <DiscreteDoubleKeyFrame KeyTime="0:0:21" Value="0"/>
+                            </DoubleAnimationUsingKeyFrames>
+                            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="img22" Storyboard.TargetProperty="Opacity">
+                                <DiscreteDoubleKeyFrame KeyTime="0:0:21" Value="1"/>
+                                <DiscreteDoubleKeyFrame KeyTime="0:0:22" Value="0"/>
+                            </DoubleAnimationUsingKeyFrames>
+                            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="img23" Storyboard.TargetProperty="Opacity">
+                                <DiscreteDoubleKeyFrame KeyTime="0:0:22" Value="1"/>
+                                <DiscreteDoubleKeyFrame KeyTime="0:0:23" Value="0"/>
+                            </DoubleAnimationUsingKeyFrames>
+                            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="img24" Storyboard.TargetProperty="Opacity">
+                                <DiscreteDoubleKeyFrame KeyTime="0:0:23" Value="1"/>
+                                <DiscreteDoubleKeyFrame KeyTime="0:0:24" Value="0"/>
+                            </DoubleAnimationUsingKeyFrames>
+                            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="img25" Storyboard.TargetProperty="Opacity">
+                                <DiscreteDoubleKeyFrame KeyTime="0:0:24" Value="1"/>
+                                <DiscreteDoubleKeyFrame KeyTime="0:0:25" Value="0"/>
+                            </DoubleAnimationUsingKeyFrames>
+                            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="img26" Storyboard.TargetProperty="Opacity">
+                                <DiscreteDoubleKeyFrame KeyTime="0:0:25" Value="1"/>
+                                <DiscreteDoubleKeyFrame KeyTime="0:0:26" Value="0"/>
+                            </DoubleAnimationUsingKeyFrames>
+                            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="img27" Storyboard.TargetProperty="Opacity">
+                                <DiscreteDoubleKeyFrame KeyTime="0:0:26" Value="1"/>
+                                <DiscreteDoubleKeyFrame KeyTime="0:0:27" Value="0"/>
+                            </DoubleAnimationUsingKeyFrames>
+                            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="img28" Storyboard.TargetProperty="Opacity">
+                                <DiscreteDoubleKeyFrame KeyTime="0:0:27" Value="1"/>
+                                <DiscreteDoubleKeyFrame KeyTime="0:0:28" Value="0"/>
+                            </DoubleAnimationUsingKeyFrames>
+                            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="img29" Storyboard.TargetProperty="Opacity">
+                                <DiscreteDoubleKeyFrame KeyTime="0:0:28" Value="1"/>
+                                <DiscreteDoubleKeyFrame KeyTime="0:0:29" Value="0"/>
+                            </DoubleAnimationUsingKeyFrames>
+                            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="img30" Storyboard.TargetProperty="Opacity">
+                                <DiscreteDoubleKeyFrame KeyTime="0:0:29" Value="1"/>
+                                <DiscreteDoubleKeyFrame KeyTime="0:0:30" Value="0"/>
+                            </DoubleAnimationUsingKeyFrames>
+                            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="img31" Storyboard.TargetProperty="Opacity">
+                                <DiscreteDoubleKeyFrame  KeyTime="0:0:30" Value="1"/>
+                                <DiscreteDoubleKeyFrame  KeyTime="0:0:31" Value="0"/>
+                            </DoubleAnimationUsingKeyFrames>
+                            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="img32" Storyboard.TargetProperty="Opacity">
+                                <DiscreteDoubleKeyFrame  KeyTime="0:0:31" Value="1"/>
+                                <DiscreteDoubleKeyFrame  KeyTime="0:0:32" Value="0"/>
+                            </DoubleAnimationUsingKeyFrames>
+                            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="img33" Storyboard.TargetProperty="Opacity">
+                                <DiscreteDoubleKeyFrame  KeyTime="0:0:32" Value="1"/>
+                                <DiscreteDoubleKeyFrame  KeyTime="0:0:33" Value="0"/>
+                            </DoubleAnimationUsingKeyFrames>
+                            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="img34" Storyboard.TargetProperty="Opacity">
+                                <DiscreteDoubleKeyFrame  KeyTime="0:0:33" Value="1"/>
+                                <DiscreteDoubleKeyFrame  KeyTime="0:0:34" Value="0"/>
+                            </DoubleAnimationUsingKeyFrames>
+                            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="img35" Storyboard.TargetProperty="Opacity">
+                                <DiscreteDoubleKeyFrame  KeyTime="0:0:34" Value="1"/>
+                                <DiscreteDoubleKeyFrame  KeyTime="0:0:35" Value="0"/>
+                            </DoubleAnimationUsingKeyFrames>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+
+                <EventTrigger RoutedEvent="MouseEnter">
+                    <ResumeStoryboard BeginStoryboardName="MyStoryboard"/>
+                </EventTrigger>
+
+                <EventTrigger RoutedEvent="MouseLeave">
+                    <PauseStoryboard BeginStoryboardName="MyStoryboard"/>
+                </EventTrigger>
+            </Grid.Triggers>
+        </Grid>
+    <!--End of Storyboard-->
+
+        <Border BorderThickness="2" 
+                CornerRadius="50" 
+                Background="#D9D9D9" 
+                Grid.Row="1"
+                Width="700"
+                Height="500"
+                HorizontalAlignment="Right"
+                Margin="0,0,200,0">
+            <DataGrid 
+                Background="Transparent"
+                BorderBrush="Transparent"
+                BorderThickness="0"
+                Foreground="DimGray"
+                Width="600"
+                Height="450"/>
+        </Border>
+    </Grid>
+</Window>

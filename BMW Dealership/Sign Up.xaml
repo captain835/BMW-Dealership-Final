@@ -79,7 +79,7 @@
                     Background="#C6C6C6"
                     Width="500"
                     Height="80">
-                    <TextBox
+                    <TextBox x:Name="username"
                     Text="Username"
                     FontSize="34"
                     Width="500"
@@ -99,7 +99,7 @@
                     Background="#C6C6C6"
                     Width="500"
                     Height="80">
-                    <PasswordBox
+                    <PasswordBox x:Name="password"
                     FontSize="34"
                     Width="500"
                     Height="80"
@@ -118,7 +118,7 @@
                     Background="#C6C6C6"
                     Width="500"
                     Height="80">
-                    <PasswordBox
+                    <PasswordBox x:Name="password_repeat"
                     FontSize="34"
                     Width="500"
                     Height="80"

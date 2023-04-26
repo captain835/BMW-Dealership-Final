@@ -54,6 +54,42 @@
     <None Remove="Resources\M3_Crpd.png" />
     <None Remove="Resources\M4.jpg" />
     <None Remove="Resources\M4_Crpd.jpg" />
+    <None Remove="Resources\x7-View\x7_1.png" />
+    <None Remove="Resources\x7-View\x7_10.png" />
+    <None Remove="Resources\x7-View\x7_11.png" />
+    <None Remove="Resources\x7-View\x7_12.png" />
+    <None Remove="Resources\x7-View\x7_13.png" />
+    <None Remove="Resources\x7-View\x7_14.png" />
+    <None Remove="Resources\x7-View\x7_15.png" />
+    <None Remove="Resources\x7-View\x7_16.png" />
+    <None Remove="Resources\x7-View\x7_17.png" />
+    <None Remove="Resources\x7-View\x7_18.png" />
+    <None Remove="Resources\x7-View\x7_19.png" />
+    <None Remove="Resources\x7-View\x7_2.png" />
+    <None Remove="Resources\x7-View\x7_20.png" />
+    <None Remove="Resources\x7-View\x7_21.png" />
+    <None Remove="Resources\x7-View\x7_22.png" />
+    <None Remove="Resources\x7-View\x7_23.png" />
+    <None Remove="Resources\x7-View\x7_24.png" />
+    <None Remove="Resources\x7-View\x7_25.png" />
+    <None Remove="Resources\x7-View\x7_26.png" />
+    <None Remove="Resources\x7-View\x7_27.png" />
+    <None Remove="Resources\x7-View\x7_28.png" />
+    <None Remove="Resources\x7-View\x7_29.png" />
+    <None Remove="Resources\x7-View\x7_3.png" />
+    <None Remove="Resources\x7-View\x7_30.png" />
+    <None Remove="Resources\x7-View\x7_31.png" />
+    <None Remove="Resources\x7-View\x7_32.png" />
+    <None Remove="Resources\x7-View\x7_33.png" />
+    <None Remove="Resources\x7-View\x7_34.png" />
+    <None Remove="Resources\x7-View\x7_35.png" />
+    <None Remove="Resources\x7-View\x7_36.png" />
+    <None Remove="Resources\x7-View\x7_4.png" />
+    <None Remove="Resources\x7-View\x7_5.png" />
+    <None Remove="Resources\x7-View\x7_6.png" />
+    <None Remove="Resources\x7-View\x7_7.png" />
+    <None Remove="Resources\x7-View\x7_8.png" />
+    <None Remove="Resources\x7-View\x7_9.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -105,6 +141,41 @@
     <Resource Include="Resources\M3_Crpd.png" />
     <Resource Include="Resources\M4.jpg" />
     <Resource Include="Resources\M4_Crpd.jpg" />
+    <Resource Include="Resources\x7-View\x7_10.png" />
+    <Resource Include="Resources\x7-View\x7_11.png" />
+    <Resource Include="Resources\x7-View\x7_12.png" />
+    <Resource Include="Resources\x7-View\x7_13.png" />
+    <Resource Include="Resources\x7-View\x7_14.png" />
+    <Resource Include="Resources\x7-View\x7_15.png" />
+    <Resource Include="Resources\x7-View\x7_16.png" />
+    <Resource Include="Resources\x7-View\x7_17.png" />
+    <Resource Include="Resources\x7-View\x7_18.png" />
+    <Resource Include="Resources\x7-View\x7_19.png" />
+    <Resource Include="Resources\x7-View\x7_2.png" />
+    <Resource Include="Resources\x7-View\x7_20.png" />
+    <Resource Include="Resources\x7-View\x7_21.png" />
+    <Resource Include="Resources\x7-View\x7_22.png" />
+    <Resource Include="Resources\x7-View\x7_23.png" />
+    <Resource Include="Resources\x7-View\x7_24.png" />
+    <Resource Include="Resources\x7-View\x7_25.png" />
+    <Resource Include="Resources\x7-View\x7_26.png" />
+    <Resource Include="Resources\x7-View\x7_27.png" />
+    <Resource Include="Resources\x7-View\x7_28.png" />
+    <Resource Include="Resources\x7-View\x7_29.png" />
+    <Resource Include="Resources\x7-View\x7_3.png" />
+    <Resource Include="Resources\x7-View\x7_30.png" />
+    <Resource Include="Resources\x7-View\x7_31.png" />
+    <Resource Include="Resources\x7-View\x7_32.png" />
+    <Resource Include="Resources\x7-View\x7_33.png" />
+    <Resource Include="Resources\x7-View\x7_34.png" />
+    <Resource Include="Resources\x7-View\x7_35.png" />
+    <Resource Include="Resources\x7-View\x7_36.png" />
+    <Resource Include="Resources\x7-View\x7_4.png" />
+    <Resource Include="Resources\x7-View\x7_5.png" />
+    <Resource Include="Resources\x7-View\x7_6.png" />
+    <Resource Include="Resources\x7-View\x7_7.png" />
+    <Resource Include="Resources\x7-View\x7_8.png" />
+    <Resource Include="Resources\x7-View\x7_9.png" />
   </ItemGroup>
 
 </Project>

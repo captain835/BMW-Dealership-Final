@@ -9,27 +9,24 @@ using System.Windows.Data;
 using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
-using System.Windows.Media.Animation;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
 namespace BMW_Dealership
 {
     /// <summary>
-    /// Interaction logic for MPower1.xaml
+    /// Interaction logic for Luxury2.xaml
     /// </summary>
-    public partial class MPower1 : Window
+    public partial class Luxury2 : Window
     {
-        public MPower1()
+        public Luxury2()
         {
             InitializeComponent();
-
         }
 
-
-        private void NextPage_Click(object sender, RoutedEventArgs e)
+        private void PreviousPage_Click(object sender, RoutedEventArgs e)
         {
-            MPower2 obj = new MPower2();
+            Luxury1 obj = new Luxury1();
             obj.Show();
             this.Close();
         }

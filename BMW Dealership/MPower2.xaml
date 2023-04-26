@@ -1,4 +1,4 @@
-﻿<Window x:Class="BMW_Dealership.Luxury1"
+﻿<Window x:Class="BMW_Dealership.MPower2"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:BMW_Dealership"
         mc:Ignorable="d"
         WindowStartupLocation="CenterScreen"
-        Title="Luxury1" Height="1080" Width="1920">
+        Title="MPower2" Height="1080" Width="1920" Background="White">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="170"/>
@@ -68,7 +68,9 @@
             </Button>
         </StackPanel>
 
-        <!--Mid Part-->
+        <!-- Mid Part -->
+
+
 
 
         <!--Storyboard-->
@@ -81,43 +83,42 @@
                     HorizontalAlignment="Center"
                     VerticalAlignment="Bottom"
                     Foreground="#3b3b3b"/>
-            <Image x:Name="img1" Source="/Resources/x7-View/x7_1.png" />
-            <Image x:Name="img2" Source="/Resources/x7-View/x7_2.png" Opacity="0" />
-            <Image x:Name="img3" Source="/Resources/x7-View/x7_3.png" Opacity="0" />
-            <Image x:Name="img4" Source="/Resources/x7-View/x7_4.png" Opacity="0" />
-            <Image x:Name="img5" Source="/Resources/x7-View/x7_5.png" Opacity="0" />
-            <Image x:Name="img6" Source="/Resources/x7-View/x7_6.png" Opacity="0" />
-            <Image x:Name="img7" Source="/Resources/x7-View/x7_7.png" Opacity="0" />
-            <Image x:Name="img8" Source="/Resources/x7-View/x7_8.png" Opacity="0" />
-            <Image x:Name="img9" Source="/Resources/x7-View/x7_9.png" Opacity="0" />
-            <Image x:Name="img10" Source="/Resources/x7-View/x7_10.png" Opacity="0" />
-            <Image x:Name="img11" Source="/Resources/x7-View/x7_11.png" Opacity="0" />
-            <Image x:Name="img12" Source="/Resources/x7-View/x7_12.png" Opacity="0" />
-            <Image x:Name="img13" Source="/Resources/x7-View/x7_13.png" Opacity="0" />
-            <Image x:Name="img14" Source="/Resources/x7-View/x7_14.png" Opacity="0" />
-            <Image x:Name="img15" Source="/Resources/x7-View/x7_15.png" Opacity="0" />
-            <Image x:Name="img16" Source="/Resources/x7-View/x7_16.png" Opacity="0" />
-            <Image x:Name="img17" Source="/Resources/x7-View/x7_17.png" Opacity="0" />
-            <Image x:Name="img18" Source="/Resources/x7-View/x7_18.png" Opacity="0" />
-            <Image x:Name="img19" Source="/Resources/x7-View/x7_19.png" Opacity="0" />
-            <Image x:Name="img20" Source="/Resources/x7-View/x7_20.png" Opacity="0" />
-            <Image x:Name="img21" Source="/Resources/x7-View/x7_21.png" Opacity="0" />
-            <Image x:Name="img22" Source="/Resources/x7-View/x7_22.png" Opacity="0" />
-            <Image x:Name="img23" Source="/Resources/x7-View/x7_23.png" Opacity="0" />
-            <Image x:Name="img24" Source="/Resources/x7-View/x7_24.png" Opacity="0" />
-            <Image x:Name="img25" Source="/Resources/x7-View/x7_25.png" Opacity="0" />
-            <Image x:Name="img26" Source="/Resources/x7-View/x7_26.png" Opacity="0" />
-            <Image x:Name="img27" Source="/Resources/x7-View/x7_27.png" Opacity="0" />
-            <Image x:Name="img28" Source="/Resources/x7-View/x7_28.png" Opacity="0" />
-            <Image x:Name="img29" Source="/Resources/x7-View/x7_29.png" Opacity="0" />
-            <Image x:Name="img30" Source="/Resources/x7-View/x7_30.png" Opacity="0" />
-            <Image x:Name="img31" Source="/Resources/x7-View/x7_31.png" Opacity="0" />
-            <Image x:Name="img32" Source="/Resources/x7-View/x7_32.png" Opacity="0" />
-            <Image x:Name="img33" Source="/Resources/x7-View/x7_33.png" Opacity="0" />
-            <Image x:Name="img34" Source="/Resources/x7-View/x7_34.png" Opacity="0" />
-            <Image x:Name="img35" Source="/Resources/x7-View/x7_35.png" Opacity="0" />
-            <Image x:Name="img36" Source="/Resources/x7-View/x7_36.png" Opacity="0" />
-
+            <Image x:Name="img1" Source="/Resources/m3-View/m3_1.png" />
+            <Image x:Name="img2" Source="/Resources/m3-View/m3_2.png" Opacity="0" />
+            <Image x:Name="img3" Source="/Resources/m3-View/m3_3.png" Opacity="0" />
+            <Image x:Name="img4" Source="/Resources/m3-View/m3_4.png" Opacity="0" />
+            <Image x:Name="img5" Source="/Resources/m3-View/m3_5.png" Opacity="0" />
+            <Image x:Name="img6" Source="/Resources/m3-View/m3_6.png" Opacity="0" />
+            <Image x:Name="img7" Source="/Resources/m3-View/m3_7.png" Opacity="0" />
+            <Image x:Name="img8" Source="/Resources/m3-View/m3_8.png" Opacity="0" />
+            <Image x:Name="img9" Source="/Resources/m3-View/m3_9.png" Opacity="0" />
+            <Image x:Name="img10" Source="/Resources/m3-View/m3_10.png" Opacity="0" />
+            <Image x:Name="img11" Source="/Resources/m3-View/m3_11.png" Opacity="0" />
+            <Image x:Name="img12" Source="/Resources/m3-View/m3_12.png" Opacity="0" />
+            <Image x:Name="img13" Source="/Resources/m3-View/m3_13.png" Opacity="0" />
+            <Image x:Name="img14" Source="/Resources/m3-View/m3_14.png" Opacity="0" />
+            <Image x:Name="img15" Source="/Resources/m3-View/m3_15.png" Opacity="0" />
+            <Image x:Name="img16" Source="/Resources/m3-View/m3_16.png" Opacity="0" />
+            <Image x:Name="img17" Source="/Resources/m3-View/m3_17.png" Opacity="0" />
+            <Image x:Name="img18" Source="/Resources/m3-View/m3_18.png" Opacity="0" />
+            <Image x:Name="img19" Source="/Resources/m3-View/m3_19.png" Opacity="0" />
+            <Image x:Name="img20" Source="/Resources/m3-View/m3_20.png" Opacity="0" />
+            <Image x:Name="img21" Source="/Resources/m3-View/m3_21.png" Opacity="0" />
+            <Image x:Name="img22" Source="/Resources/m3-View/m3_22.png" Opacity="0" />
+            <Image x:Name="img23" Source="/Resources/m3-View/m3_23.png" Opacity="0" />
+            <Image x:Name="img24" Source="/Resources/m3-View/m3_24.png" Opacity="0" />
+            <Image x:Name="img25" Source="/Resources/m3-View/m3_25.png" Opacity="0" />
+            <Image x:Name="img26" Source="/Resources/m3-View/m3_26.png" Opacity="0" />
+            <Image x:Name="img27" Source="/Resources/m3-View/m3_27.png" Opacity="0" />
+            <Image x:Name="img28" Source="/Resources/m3-View/m3_28.png" Opacity="0" />
+            <Image x:Name="img29" Source="/Resources/m3-View/m3_29.png" Opacity="0" />
+            <Image x:Name="img30" Source="/Resources/m3-View/m3_30.png" Opacity="0" />
+            <Image x:Name="img31" Source="/Resources/m3-View/m3_31.png" Opacity="0" />
+            <Image x:Name="img32" Source="/Resources/m3-View/m3_32.png" Opacity="0" />
+            <Image x:Name="img33" Source="/Resources/m3-View/m3_33.png" Opacity="0" />
+            <Image x:Name="img34" Source="/Resources/m3-View/m3_34.png" Opacity="0" />
+            <Image x:Name="img35" Source="/Resources/m3-View/m3_35.png" Opacity="0" />
+            <Image x:Name="img36" Source="/Resources/m3-View/m3_36.png" Opacity="0" />
 
             <Grid.Triggers>
                 <EventTrigger RoutedEvent="FrameworkElement.Loaded">
@@ -279,8 +280,9 @@
                     <PauseStoryboard BeginStoryboardName="MyStoryboard"/>
                 </EventTrigger>
             </Grid.Triggers>
-            <!--End of Storyboard-->
         </Grid>
+        <!--End of Storyboard-->
+
         <Border BorderThickness="2" 
                 CornerRadius="50" 
                 Background="#D9D9D9" 
@@ -297,19 +299,19 @@
                 Width="600"
                 Height="450"/>
         </Border>
-        <Button x:Name="NextPage"
+        <Button x:Name="PreviousPage"
             Background="Transparent"
-            VerticalAlignment="Bottom"
+            VerticalAlignment="Top"
             HorizontalAlignment="Center"
             HorizontalContentAlignment="Center"
             Width="120"
             Height="120"
-            Margin="0,0,0,20"
+            Margin="0,20,0,0"
             Grid.Row="1"
             BorderBrush="Transparent"
             BorderThickness="0"
-                Click="NextPage_Click">
-            <Image Source="/Resources/Triangular_button.png"/>
+            Click="PreviousPage_Click">
+            <Image Source="/Resources/Triangular_button_Up.png"/>
         </Button>
     </Grid>
 </Window>

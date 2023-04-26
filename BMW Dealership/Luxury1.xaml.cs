@@ -23,5 +23,12 @@ namespace BMW_Dealership
         {
             InitializeComponent();
         }
+
+        private void NextPage_Click(object sender, RoutedEventArgs e)
+        {
+            Luxury2 obj = new Luxury2();
+            obj.Show();
+            this.Close();
+        }
     }
 }

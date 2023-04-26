@@ -86,7 +86,7 @@
                     Width="500"
                     Height="80"
                     Background="Transparent"
-                    Foreground="#A9A9A9"
+                    Foreground="Gray"
                     HorizontalContentAlignment="Center"
                     VerticalContentAlignment="Center"
                     BorderBrush="Transparent"

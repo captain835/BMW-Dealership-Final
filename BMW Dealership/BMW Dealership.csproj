@@ -90,8 +90,13 @@
     <None Remove="Resources\M3_Crpd.png" />
     <None Remove="Resources\M4.jpg" />
     <None Remove="Resources\M4_Crpd.jpg" />
+    <None Remove="Resources\Profile.png" />
     <None Remove="Resources\Triangular_button.png" />
     <None Remove="Resources\Triangular_button_Up.png" />
+    <None Remove="Resources\User_Country.png" />
+    <None Remove="Resources\User_Email.png" />
+    <None Remove="Resources\User_Names.png" />
+    <None Remove="Resources\User_Phone.png" />
     <None Remove="Resources\x5-View\x5_1.png" />
     <None Remove="Resources\x5-View\x5_10.png" />
     <None Remove="Resources\x5-View\x5_11.png" />
@@ -251,8 +256,13 @@
     <Resource Include="Resources\M3_Crpd.png" />
     <Resource Include="Resources\M4.jpg" />
     <Resource Include="Resources\M4_Crpd.jpg" />
+    <Resource Include="Resources\Profile.png" />
     <Resource Include="Resources\Triangular_button.png" />
     <Resource Include="Resources\Triangular_button_Up.png" />
+    <Resource Include="Resources\User_Country.png" />
+    <Resource Include="Resources\User_Email.png" />
+    <Resource Include="Resources\User_Names.png" />
+    <Resource Include="Resources\User_Phone.png" />
     <Resource Include="Resources\x5-View\x5_1.png" />
     <Resource Include="Resources\x5-View\x5_10.png" />
     <Resource Include="Resources\x5-View\x5_11.png" />

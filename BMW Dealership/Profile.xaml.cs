@@ -50,7 +50,6 @@ namespace BMW_Dealership
             command.Parameters.AddWithValue("@username", username);
             SQLiteDataReader reader = command.ExecuteReader();
             bool usernameExists = reader.HasRows;
-            MessageBox.Show(usernameExists.ToString());
 
             string stm = "";
             if (usernameExists)

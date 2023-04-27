@@ -38,10 +38,10 @@ namespace BMW_Dealership
                 command.ExecuteNonQuery();
             }
             //Insert data into the Database
-            using (var command2 = new SQLiteCommand("INSERT INTO CarSpecs (Model, Power, Type, Transmission, Color, Mileage, [See More]) VALUES ('M3 CS (G26)', '375 kW (~510 hp)', 'Petrol', 'Automatic', 'Signal Green', 21300, 'https://www.mobile.bg/pcgi/mobile.cgi?act=4&adv=11666772180125197&slink=s728p0')", dbConnection))
-            {
-                command2.ExecuteNonQuery();
-            }
+            //using (var command2 = new SQLiteCommand("INSERT INTO CarSpecs (Model, Power, Type, Transmission, Color, Mileage, [See More]) VALUES ('M3 CS (G26)', '375 kW (~510 hp)', 'Petrol', 'Automatic', 'Signal Green', 21300, 'https://www.mobile.bg/pcgi/mobile.cgi?act=4&adv=11666772180125197&slink=s728p0')", dbConnection))
+            //{
+            //    command2.ExecuteNonQuery();
+            //}
             List<Specs> items = new List<Specs>();
             string stm = "SELECT Model, Power, Type, Transmission, Color, Mileage, [See More] FROM CarSpecs WHERE Model = 'M3 CS (G26)'";
             using (var command3 = new SQLiteCommand(stm, dbConnection))

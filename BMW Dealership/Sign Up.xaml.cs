@@ -1,6 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Common;
 using System.Data.SqlClient;
+using System.Data.SQLite;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,6 +15,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using System.Xml.Linq;
 
 namespace BMW_Dealership
 {
@@ -20,19 +24,75 @@ namespace BMW_Dealership
     /// </summary>
     public partial class Sign_Up : Window
     {
+        private SQLiteConnection dbConnection;
         public Sign_Up()
         {
             InitializeComponent();
-            string connectionString = @"Data Source = (LocalDB)\MSSQLLocalDB; Initial Catalog=Database; Integrated Security=True; TrustServerCertificate=True; Encrypt=False";
-
-            using (SqlConnection sqlcon = new SqlConnection(connectionString))
+            if (!File.Exists("users.db"))
             {
-                sqlcon.Open();
-                SqlCommand command = new SqlCommand("INSERT INTO UserCredentials(Username, Password) VALUES (@Username, @Password)", sqlcon);
-                command.Parameters.AddWithValue("@Username", username.Text);
-                command.Parameters.AddWithValue("@Password", password.Password);
+                SQLiteConnection.CreateFile("users.db");
+            }
+            dbConnection = new SQLiteConnection("Data Source=UserCredentials.db;Version=3;");
+            dbConnection.Open();
+            using (var command = new SQLiteCommand("CREATE TABLE IF NOT EXISTS UserCredentials (id INTEGER PRIMARY KEY AUTOINCREMENT, username TEXT UNIQUE, password TEXT)", dbConnection))
+            {
                 command.ExecuteNonQuery();
             }
+        }
+
+        private void SignUp_Click(object sender, RoutedEventArgs e)
+        {
+            if (PasswordRBox.Password != PasswordBox.Password)
+            {
+
+            }
+            string username = UsernameBox.Text.Trim();
+            string password = PasswordRBox.Password;
+
+            if (string.IsNullOrEmpty(username) || string.IsNullOrEmpty(password) || string.IsNullOrEmpty(PasswordBox.Password))
+            {
+                MessageBox.Show("Please fill in all fields.");
+                return;
+            }
+
+
+
+            using (var checkCommand = new SQLiteCommand("SELECT COUNT(*) FROM UserCredentials WHERE username=@username", dbConnection))
+            {
+                checkCommand.Parameters.AddWithValue("@username", username);
+                object result = checkCommand.ExecuteScalar();
+                int count = Convert.ToInt32(result);
+
+                if (count > 0)
+                {
+                    MessageBox.Show("Username already exists. Please choose a different username.");
+                    return;
+                }
+            }
+
+
+
+            using (var insertCommand = new SQLiteCommand("INSERT INTO UserCredentials(username, password) VALUES (@username, @password)", dbConnection))
+            {
+                insertCommand.Parameters.AddWithValue("@username", username);
+                insertCommand.Parameters.AddWithValue("@password", password);
+                insertCommand.ExecuteNonQuery();
+            }
+
+
+            dbConnection.Close();
+
+            // Show a message box to indicate success
+            //MessageBox.Show("Account created successfully!");
+
+            Log_In obj = new Log_In();
+            obj.Show();
+            this.Close();
+        }
+        public class User
+        {
+            public string Username { get; set; }
+            public string Password { get; set; }
         }
     }
 }

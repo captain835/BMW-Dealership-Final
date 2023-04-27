@@ -23,5 +23,12 @@ namespace BMW_Dealership
         {
             InitializeComponent();
         }
+
+        private void Save_Click(object sender, RoutedEventArgs e)
+        {
+            Profile obj= new Profile();
+            obj.Show();
+            this.Close();
+        }
     }
 }

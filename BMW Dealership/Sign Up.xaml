@@ -79,7 +79,7 @@
                     Background="#C6C6C6"
                     Width="500"
                     Height="80">
-                    <TextBox x:Name="username"
+                    <TextBox x:Name="UsernameBox"
                     Text="Username"
                     FontSize="34"
                     Width="500"
@@ -99,7 +99,7 @@
                     Background="#C6C6C6"
                     Width="500"
                     Height="80">
-                    <PasswordBox x:Name="password"
+                    <PasswordBox x:Name="PasswordBox"
                     FontSize="34"
                     Width="500"
                     Height="80"
@@ -118,7 +118,7 @@
                     Background="#C6C6C6"
                     Width="500"
                     Height="80">
-                    <PasswordBox x:Name="password_repeat"
+                    <PasswordBox x:Name="PasswordRBox"
                     FontSize="34"
                     Width="500"
                     Height="80"
@@ -137,7 +137,9 @@
                     Background="#A9A9A9"
                     Width="250"
                     Height="80">
-                    <Button 
+                    <Button x:Name="SignUp"
+                        Click="SignUp_Click"
+                        Template="{StaticResource NoMouseOverButtonTemplate}"
                         Cursor ="Hand"
                         Content="Go"
                         FontSize="34"

@@ -23,5 +23,26 @@ namespace BMW_Dealership
         {
             InitializeComponent();
         }
+
+        private void MPower_Click(object sender, RoutedEventArgs e)
+        {
+            MPower1 obj = new MPower1();
+            obj.Show();
+            this.Close();
+        }
+
+        private void Luxury_Click(object sender, RoutedEventArgs e)
+        {
+            Luxury1 obj = new Luxury1();
+            obj.Show();
+            this.Close();
+        }
+
+        private void Profile_Click(object sender, RoutedEventArgs e)
+        {
+            Profile obj = new Profile();
+            obj.Show();
+            this.Close();
+        }
     }
 }

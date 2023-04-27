@@ -16,6 +16,8 @@
         <Border Grid.Row="0" Background="#EEEEEE" BorderBrush="Transparent" BorderThickness="0"/>
         <Button
             Background="Transparent"
+            Template="{StaticResource NoMouseOverButtonTemplate}"
+            Cursor="Hand"
             VerticalAlignment="Center"
             HorizontalAlignment="Left"
             HorizontalContentAlignment="Center"
@@ -54,6 +56,10 @@
             Margin="80,0"
             Orientation="Horizontal">
             <Button
+                x:Name="Profile"
+                Click="Profile_Click"
+                Template="{StaticResource NoMouseOverButtonTemplate}"
+                Cursor="Hand"
                 BorderBrush="Transparent"
                 BorderThickness="0"
                 Height="70"
@@ -108,6 +114,10 @@
                     </Border.Background>
                     <Grid>
                     <Button
+                        Template="{StaticResource NoMouseOverButtonTemplate}"
+                        Cursor="Hand"
+                        x:Name="MPower"
+                        Click="MPower_Click"
                         Width="809"
                         Height="568"
                         HorizontalAlignment="Center"
@@ -142,6 +152,10 @@
                             FontWeight="Light"
                             Foreground="White"/>
                         <Button
+                            Template="{StaticResource NoMouseOverButtonTemplate}"
+                            Cursor="Hand"
+                            x:Name="Luxury"
+                            Click="Luxury_Click"
                             Width="809"
                             Height="568"
                             HorizontalAlignment="Center"

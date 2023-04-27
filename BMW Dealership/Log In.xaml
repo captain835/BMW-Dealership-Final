@@ -80,7 +80,7 @@
                     Background="#C6C6C6"
                     Width="500"
                     Height="80">
-                    <TextBox
+                    <TextBox x:Name="UsernameTextBox"
                     Text="Username"
                     FontSize="34"
                     Width="500"
@@ -100,7 +100,7 @@
                     Background="#C6C6C6"
                     Width="500"
                     Height="80">
-                    <PasswordBox
+                    <PasswordBox x:Name="PasswordBox"
                     FontSize="34"
                     Width="500"
                     Height="80"
@@ -119,7 +119,9 @@
                     Background="#A9A9A9"
                     Width="250"
                     Height="80">
-                    <Button 
+                    <Button x:Name="LogIn"
+                        Template="{StaticResource NoMouseOverButtonTemplate}"
+                        Click="LogIn_Click"
                         Cursor ="Hand"
                         Content="Go"
                         FontSize="34"
@@ -135,6 +137,7 @@
 
                 <Button x:Name="GoToSignUp"
                         Grid.Row="4"
+                        Template="{StaticResource NoMouseOverButtonTemplate}"
                         Cursor="Hand"
                         Content="Sign Up"
                         Margin="0,0,0,100"

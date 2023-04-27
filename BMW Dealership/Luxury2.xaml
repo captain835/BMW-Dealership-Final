@@ -14,6 +14,8 @@
         </Grid.RowDefinitions>
         <Border Background="#EEEEEE" BorderBrush="Transparent"/>
         <Button
+            x:Name="Main"
+            Click="Main_Click"
             Background="Transparent"
             VerticalAlignment="Center"
             HorizontalAlignment="Left"
@@ -53,6 +55,8 @@
             Margin="80,0"
             Orientation="Horizontal">
             <Button
+                x:Name="Profile"
+                Click="Profile_Click"
                 BorderBrush="Transparent"
                 BorderThickness="0"
                 Height="70"

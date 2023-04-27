@@ -30,5 +30,19 @@ namespace BMW_Dealership
             obj.Show();
             this.Close();
         }
+
+        private void Profile_Click(object sender, RoutedEventArgs e)
+        {
+            Profile obj = new Profile();
+            obj.Show();
+            this.Close();
+        }
+
+        private void Main_Click(object sender, RoutedEventArgs e)
+        {
+            Main obj = new Main();
+            obj.Show();
+            this.Close();
+        }
     }
 }

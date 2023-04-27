@@ -172,8 +172,12 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="MaterialDesignThemes" Version="4.8.0" />
+    <PackageReference Include="SQLite" Version="3.13.0" />
+    <PackageReference Include="Stub.System.Data.SQLite.Core.NetFramework" Version="1.0.117" />
     <PackageReference Include="System.Data.SqlClient" Version="4.8.5" />
+    <PackageReference Include="System.Data.SQLite" Version="1.0.117" />
+    <PackageReference Include="System.Data.SQLite.EF6" Version="1.0.117" />
+    <PackageReference Include="System.Data.SQLite.Linq" Version="1.0.117" />
   </ItemGroup>
 
   <ItemGroup>

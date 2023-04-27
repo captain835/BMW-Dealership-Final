@@ -123,6 +123,7 @@
                 <Button 
                     x:Name="EditProfile"
                     Click="EditProfile_Click"
+                    Template="{StaticResource NoMouseOverButtonTemplate}"
                         Cursor ="Hand"
                         Content="Edit Profile"
                         FontSize="34"

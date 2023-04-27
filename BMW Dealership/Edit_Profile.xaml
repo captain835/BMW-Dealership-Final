@@ -16,6 +16,8 @@
         <Button
             Background="Transparent"
             VerticalAlignment="Center"
+            Template="{StaticResource NoMouseOverButtonTemplate}"
+            Cursor="Hand"
             HorizontalAlignment="Left"
             HorizontalContentAlignment="Center"
             Width="350"
@@ -169,6 +171,7 @@
                 <Button 
                     x:Name="Save"
                     Click="Save_Click"
+                    Template="{StaticResource NoMouseOverButtonTemplate}"
                         Cursor ="Hand"
                         Content="Save"
                         FontSize="34"

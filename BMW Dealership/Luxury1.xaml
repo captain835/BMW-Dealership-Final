@@ -16,6 +16,8 @@
         <Button
             x:Name="Main"
             Click="Main_Click"
+            Template="{StaticResource NoMouseOverButtonTemplate}"
+            Cursor="Hand"
             Background="Transparent"
             VerticalAlignment="Center"
             HorizontalAlignment="Left"
@@ -56,6 +58,8 @@
             Orientation="Horizontal">
             <Button x:Name="Profile"
                 Click="Profile_Click"
+                Template="{StaticResource NoMouseOverButtonTemplate}"
+                Cursor="Hand"
                 BorderBrush="Transparent"
                 BorderThickness="0"
                 Height="70"
@@ -302,6 +306,8 @@
         </Border>
         <Button x:Name="NextPage"
             Background="Transparent"
+            Template="{StaticResource NoMouseOverButtonTemplate}"
+            Cursor="Hand"
             VerticalAlignment="Bottom"
             HorizontalAlignment="Center"
             HorizontalContentAlignment="Center"

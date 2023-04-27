@@ -28,9 +28,9 @@ namespace BMW_Dealership
         public Sign_Up()
         {
             InitializeComponent();
-            if (!File.Exists("users.db"))
+            if (!File.Exists("UserCredentials.db"))
             {
-                SQLiteConnection.CreateFile("users.db");
+                SQLiteConnection.CreateFile("UserCredentials.db");
             }
             dbConnection = new SQLiteConnection("Data Source=UserCredentials.db;Version=3;");
             dbConnection.Open();
@@ -44,50 +44,54 @@ namespace BMW_Dealership
         {
             if (PasswordRBox.Password != PasswordBox.Password)
             {
-
+                MessageBox.Show("Passwords don't match.");
             }
-            string username = UsernameBox.Text.Trim();
-            string password = PasswordRBox.Password;
-
-            if (string.IsNullOrEmpty(username) || string.IsNullOrEmpty(password) || string.IsNullOrEmpty(PasswordBox.Password))
+            else
             {
-                MessageBox.Show("Please fill in all fields.");
-                return;
-            }
+                string username = UsernameBox.Text.Trim();
+                string password = PasswordRBox.Password;
 
-
-
-            using (var checkCommand = new SQLiteCommand("SELECT COUNT(*) FROM UserCredentials WHERE username=@username", dbConnection))
-            {
-                checkCommand.Parameters.AddWithValue("@username", username);
-                object result = checkCommand.ExecuteScalar();
-                int count = Convert.ToInt32(result);
-
-                if (count > 0)
+                if (string.IsNullOrEmpty(username) || string.IsNullOrEmpty(password) || string.IsNullOrEmpty(PasswordBox.Password))
                 {
-                    MessageBox.Show("Username already exists. Please choose a different username.");
+                    MessageBox.Show("Please fill in all fields.");
                     return;
                 }
+
+
+
+                using (var checkCommand = new SQLiteCommand("SELECT COUNT(*) FROM UserCredentials WHERE username=@username", dbConnection))
+                {
+                    checkCommand.Parameters.AddWithValue("@username", username);
+                    object result = checkCommand.ExecuteScalar();
+                    int count = Convert.ToInt32(result);
+
+                    if (count > 0)
+                    {
+                        MessageBox.Show("Username already exists. Please choose a different username.");
+                        return;
+                    }
+                }
+
+
+
+                using (var insertCommand = new SQLiteCommand("INSERT INTO UserCredentials(username, password) VALUES (@username, @password)", dbConnection))
+                {
+                    insertCommand.Parameters.AddWithValue("@username", username);
+                    insertCommand.Parameters.AddWithValue("@password", password);
+                    Application.Current.Resources["Username"] = username;
+                    insertCommand.ExecuteNonQuery();
+                }
+
+
+                dbConnection.Close();
+
+                // Show a message box to indicate success
+                //MessageBox.Show("Account created successfully!");
+
+                Log_In obj = new Log_In();
+                obj.Show();
+                this.Close();
             }
-
-
-
-            using (var insertCommand = new SQLiteCommand("INSERT INTO UserCredentials(username, password) VALUES (@username, @password)", dbConnection))
-            {
-                insertCommand.Parameters.AddWithValue("@username", username);
-                insertCommand.Parameters.AddWithValue("@password", password);
-                insertCommand.ExecuteNonQuery();
-            }
-
-
-            dbConnection.Close();
-
-            // Show a message box to indicate success
-            //MessageBox.Show("Account created successfully!");
-
-            Log_In obj = new Log_In();
-            obj.Show();
-            this.Close();
         }
         public class User
         {

@@ -90,6 +90,7 @@
                         Height="80"
                         Margin="0,3">
                         <TextBox
+                            x:Name="FullNameBox"
                             Text="Full Name"
                             FontSize="34"
                             Width="500"
@@ -109,6 +110,7 @@
                         Height="80"
                         Margin="0,3">
                         <TextBox
+                            x:Name="EmailBox"
                             Text="E-Mail"
                             FontSize="34"
                             Width="500"
@@ -128,6 +130,7 @@
                         Height="80"
                         Margin="0,3">
                         <TextBox
+                            x:Name="PhoneBox"
                             Text="Phone"
                             FontSize="34"
                             Width="500"
@@ -147,6 +150,7 @@
                         Height="80"
                         Margin="0,3">
                         <TextBox
+                            x:Name="CountryBox"
                             Text="Country"
                             FontSize="34"
                             Width="500"

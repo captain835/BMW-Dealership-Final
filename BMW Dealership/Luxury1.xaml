@@ -296,13 +296,45 @@
                 Height="500"
                 HorizontalAlignment="Right"
                 Margin="0,0,200,0">
-            <DataGrid 
+            <StackPanel>
+                <ItemsControl x:Name="SpecsGrid"
+                Margin="0,40"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                FontSize="40"
                 Background="Transparent"
                 BorderBrush="Transparent"
                 BorderThickness="0"
                 Foreground="DimGray"
                 Width="600"
-                Height="450"/>
+                Height="350">
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <Grid Margin="0,0,0,5">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="250" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <TextBlock Text="{Binding Title}" FontSize="40" FontWeight="Medium"/>
+                                <TextBlock Text="{Binding Value}" FontSize="40" Grid.Column="1" />
+                            </Grid>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
+                <TextBlock
+                    Cursor="Hand"
+                    Height="70"
+                    Width="300"
+                    Background="Transparent"
+                    Foreground="#3b3b3b"
+                    FontSize="40"
+                    HorizontalAlignment="Center"
+                    TextAlignment="Center">           
+                    <Hyperlink NavigateUri="{Binding MyUri}" RequestNavigate="Hyperlink_RequestNavigate">
+                        See More
+                    </Hyperlink>
+                </TextBlock>
+            </StackPanel>
         </Border>
         <Button x:Name="NextPage"
             Background="Transparent"

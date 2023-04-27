@@ -24,6 +24,7 @@ namespace BMW_Dealership
     /// </summary>
     public partial class Log_In : Window
     {
+        public string Username;
         public Log_In()
         {
             InitializeComponent();
@@ -43,6 +44,8 @@ namespace BMW_Dealership
             string username = UsernameTextBox.Text;
             string password = PasswordBox.Password;
 
+            Username=username;
+
             using (var connection = new SQLiteConnection("Data Source=UserCredentials.db;Version=3;"))
             {
                 connection.Open();
@@ -51,6 +54,7 @@ namespace BMW_Dealership
                 {
                     command.Parameters.AddWithValue("@username", username);
                     command.Parameters.AddWithValue("@password", password);
+                    Application.Current.Resources["Username"] = username;
 
                     using (var reader = command.ExecuteReader())
                     {
